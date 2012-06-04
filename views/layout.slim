@@ -1,13 +1,50 @@
 doctype Strict
 html
   head
-    title Bartender
+    title A Refactoring Story
     link href='/bakedwebapp/images/bakedweb.ico'  rel='Shortcut Icon'
-    link href='/styles.css' media='screen' rel='stylesheet' type='text/css'
+    link href='/stylesheets/style.css' media='screen' rel='stylesheet' type='text/css'
     script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
     script src='http://use.typekit.com/ime1wir.js' type='text/javascript'
     javascript:
       try{Typekit.load();}catch(e){}
 
   body
-    div
+    #a1
+      #a2
+        #a3
+          #a4
+
+            table
+              tr 
+                td
+                  a href="#a1" id="p1" 1
+                td 
+                  a href="#a2" id="p2" 2
+                td 
+                  a href="#a3" id="p3" 3
+                td
+                  a href="#a4" id="p4" 4
+
+            #i0.page
+              h1 A Refactoring Story.
+
+            #i1.page
+              a.backbutton href="#a4"
+              a.nextbutton href="#a2"
+              h1 A Refactoring Story
+
+            #i2.page
+              a.backbutton href="#a1"
+              a.nextbutton href="#a3"
+              h1 Example 1 
+
+            #i3.page
+              a.backbutton href="#a4"
+              a.nextbutton href="#a2"
+              h1 Example 2
+
+            #i4.page
+              a.backbutton href="#a3"
+              a.nextbutton href="#a1"
+              h1  Example 3
